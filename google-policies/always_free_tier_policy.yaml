@@ -1,0 +1,39 @@
+# Restrict Machine Types to Free Tier (f1-micro only)
+constraint: constraints/compute.restrictMachineTypes
+listPolicy:
+  allowedValues:
+    - "n1-f1-micro"
+
+---
+# Disable GPU Types
+constraint: constraints/compute.disableGpuTypes
+enforce: true
+
+---
+# Restrict Regions to Always Free Tier Regions
+constraint: constraints/compute.restrictLocation
+listPolicy:
+  allowedValues:
+    - "us-central1" # Free Tier Region
+    - "us-east1"    # Free Tier Region
+
+---
+# Disable Cloud Spanner API
+constraint: constraints/serviceuser.services
+listPolicy:
+  deniedValues:
+    - "spanner.googleapis.com"
+
+---
+# Disable AI Platform Training API
+constraint: constraints/serviceuser.services
+listPolicy:
+  deniedValues:
+    - "ml.googleapis.com"
+
+---
+# Disable Premium VMs (High-Memory/High-CPU)
+constraint: constraints/compute.restrictMachineFamilies
+listPolicy:
+  allowedValues:
+    - "n1"
