@@ -101,7 +101,8 @@ force_destroy = true
 
 to your storage bucket configuration.
 
-⚠️ Important: You need to run `terraform apply` first, to change the storage bucket's configuration to include `force_destroy` and then you can delete a non-empty bucket with `terraform destroy`.
+**⚠️ Important:**
+You need to run `terraform apply` first, to change the storage bucket's configuration to include `force_destroy` and then you can delete a non-empty bucket with `terraform destroy`.
 
 ## Troubleshooting ##
 
