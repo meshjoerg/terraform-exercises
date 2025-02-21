@@ -61,7 +61,7 @@ You can also verify your bucket in the **Google Cloud Console**.
 After running `terraform apply`, go to the **Google Cloud Console**:
 
 1. Open [Google Cloud Storage](https://console.cloud.google.com/storage).
-2. Check for a bucket with the name you specified in `terraform.tfvars`.
+2. Check for a bucket with the name you specified in your terraform code.
 3. Click on the bucket to view its details.
 
 Alternatively, use the Google Cloud SDK (`gsutil`) to verify the bucket:

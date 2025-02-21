@@ -4,10 +4,10 @@
 
 | Step | `main.tf` File Creates |
 |------|-----------------------|
-| **Step 1** | A **simple Cloud Storage bucket** |
-| **Step 2** | **Adds versioning & labels** to the storage bucket |
-| **Step 3** | **Assigns IAM permissions** for a storage bucket |
-| **Step 4** | **Deploys a Compute Engine VM** |
+| **Step 1a** | A **simple Cloud Storage bucket** |
+| **Step 1b** | **Adds versioning & labels** to the storage bucket |
+| **Step 1c** | **Assigns IAM permissions** for a storage bucket |
+| **Step 2** | **Deploys a Compute Engine VM** |
 
 ## Notes for use
 
